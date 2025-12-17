@@ -19,11 +19,12 @@ public Account login(String username , String pass) {
 		}
 	} catch (Exception e) {
 		// TODO: handle exception
+		e.printStackTrace();
 	}
 	return null;
 }
 public void register(Account acc) {
-	String sql ="INSERT INTO ACCOUNT VALUES (?,?,?,?)";
+	String sql ="INSERT INTO ACCOUNT VALUES (?,?,?,?,?,?)";
 	try (Connection c = DBConnect.getConnect();
 			PreparedStatement ps = c.prepareStatement(sql)){
 		ps.setString(1,acc.getUserName());
@@ -32,7 +33,7 @@ public void register(Account acc) {
 		ps.setInt(4,acc.getIdAccount());
 		ps.setBoolean(5,acc.getRole());
 		ps.setInt(6,acc.getNumber());
-		ps.executeUpdate(sql);
+		ps.executeUpdate();
 			
 	} catch (Exception e) {
 		// TODO: handle exception
