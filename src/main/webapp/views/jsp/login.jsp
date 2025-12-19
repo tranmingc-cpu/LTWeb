@@ -8,6 +8,10 @@
  <link rel="stylesheet" href="/FoodOrderWeb/views/Shared/login.css">
 </head>
 <body>
+<div class="page">
+<div class ="header-titel">
+<h1> FOOD ORDER ONLINE </h1>
+ </div>
 <div class="login-box">
     <h2>Đăng nhập</h2>
 
@@ -17,6 +21,7 @@
 
         <button type="submit">Đăng nhập</button>
     </form>
+</div>
 </div>
 </body>
 </html>

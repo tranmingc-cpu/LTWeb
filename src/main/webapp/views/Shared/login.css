@@ -6,41 +6,63 @@
 
 body {
     background: #f2f2f2;
+    height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.page{
+	text-align:center;
+}
+/* ===== TITLE ===== */
+.header-title{
+    background:#fff;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    margin:30px auto;
+    max-width:1200px;
+    padding:20px 30px;
+    margin-top:-200px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:16px;
 }
 
 .login-box {
     background: #fff;
-    padding: 30px;
-    width: 320px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 60px;
+    width: 480px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
 }
 
 .login-box h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
 }
 
 .login-box input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 14px;
+    margin-bottom: 18px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 15px;
 }
 
 .login-box button {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     background: #e63946;
     border: none;
     color: white;
-    font-size: 15px;
-    border-radius: 4px;
+    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
 }
 

@@ -13,6 +13,19 @@ body{
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     text-align: center;
 }
+.header-titel h1{
+    background:#c0c0c0;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    margin:30px auto;
+    max-width:1200px;
+    padding:20px 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:16px;
+}
 
 .register-container h2 {
     color: #e63946;

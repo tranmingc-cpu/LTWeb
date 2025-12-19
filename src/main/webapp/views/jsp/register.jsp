@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="/FoodOrderWeb/views/Shared/register.css">
 </head>
 <body>
+<div class ="header-titel">
+<h1> FOOD ORDER ONLINE </h1>
+ </div>
 	<div class="register-container">
 		<h2>Đăng ký tài khoản</h2>
 		<c:if test="${not empty error}">

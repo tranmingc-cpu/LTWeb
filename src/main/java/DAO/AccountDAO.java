@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import model.*;
 public class AccountDAO {
 public Account login(String username , String pass) {
-	String sql = "SELECT * FROM ACCOUNT Where username =? AND password=?";
+	String sql = "SELECT * FROM ACCOUNT Where username = ? AND password= ? ";
 	try {
 		Connection con = DBConnect.getConnect();
 		PreparedStatement ps = con.prepareStatement(sql);
@@ -31,8 +31,7 @@ public void register(Account acc) {
 		ps.setString(2,acc.getEmail());
 		ps.setString(3,acc.getPassword());
 		ps.setInt(4,acc.getIdAccount());
-		ps.setBoolean(5,acc.getRole());
-		ps.setInt(6,acc.getNumber());
+		ps.setInt(5,acc.getNumber());
 		ps.executeUpdate();
 			
 	} catch (Exception e) {
