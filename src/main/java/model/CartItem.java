@@ -1,12 +1,17 @@
 package model;
 
 public class CartItem {
+	private int id;
 	 private Food food;
 	   private int quantity;
-	public CartItem(Food food, int quantity) {
-		super();
-		this.food = food;
-		this.quantity = quantity;
+	public CartItem() {
+
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public Food getFood() {
 		return food;
