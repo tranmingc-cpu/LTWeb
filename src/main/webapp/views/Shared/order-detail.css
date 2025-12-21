@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.order-container {
+    width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* Header */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.shop-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.order-status {
+    color: #ee4d2d;
+    font-weight: bold;
+}
+
+/* Product */
+.product-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-price {
+    color: #ee4d2d;
+    font-weight: bold;
+}
+
+/* Box */
+.order-box {
+    margin-top: 20px;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Total */
+.order-total {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.order-total strong {
+    color: #ee4d2d;
+    margin-left: 10px;
+}
+
+/* Action */
+.order-action {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-outline {
+    padding: 8px 16px;
+    border: 1px solid #ee4d2d;
+    background: #fff;
+    color: #ee4d2d;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    padding: 8px 16px;
+    background: #ee4d2d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
